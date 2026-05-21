@@ -40,9 +40,39 @@ export default function Nosotros() {
         <div className="w-full lg:w-1/2">
           <FadeIn>
             <div className="w-full aspect-[4/5] bg-qiru-surface rounded-lg relative overflow-hidden shadow-2xl flex items-center justify-center border border-qiru-border group">
-              {/* Craftsman Image */}
-              <img src="https://images.unsplash.com/photo-1610996843063-ceb9cb256b82?auto=format&fit=crop&w=800&q=80" alt="Artesano tallando madera" className="w-full h-full object-cover opacity-90 group-hover:scale-[1.03] transition-transform duration-1000 grayscale-[20%]" />
-              <div className="absolute inset-0 bg-qiru-dark/20 group-hover:bg-transparent transition-colors duration-1000"></div>
+              <svg viewBox="0 0 400 500" className="w-[75%] max-w-[280px] opacity-60" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                {/* Workbench */}
+                <rect x="60" y="320" width="280" height="16" rx="3" stroke="#C9A96E" strokeWidth="2" fill="#2A2420"/>
+                <line x1="90" y1="336" x2="90" y2="420" stroke="#9B7A55" strokeWidth="2"/>
+                <line x1="310" y1="336" x2="310" y2="420" stroke="#9B7A55" strokeWidth="2"/>
+                {/* Wood plank on bench */}
+                <rect x="100" y="290" width="200" height="32" rx="4" stroke="#C9A96E" strokeWidth="1.5" fill="#322C26"/>
+                <line x1="130" y1="290" x2="130" y2="322" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                <line x1="200" y1="290" x2="200" y2="322" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                <line x1="270" y1="290" x2="270" y2="322" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                {/* Chisel / tool */}
+                <line x1="230" y1="240" x2="230" y2="295" stroke="#C9A96E" strokeWidth="3" strokeLinecap="round"/>
+                <rect x="220" y="232" width="20" height="12" rx="2" stroke="#C9A96E" strokeWidth="1.5" fill="#2A2420"/>
+                {/* Artisan figure */}
+                <circle cx="200" cy="140" r="38" stroke="#C9A96E" strokeWidth="2" fill="#1C1812"/>
+                {/* Face details */}
+                <circle cx="188" cy="136" r="4" fill="#C9A96E" opacity="0.6"/>
+                <circle cx="212" cy="136" r="4" fill="#C9A96E" opacity="0.6"/>
+                <path d="M188 158 Q200 168 212 158" stroke="#C9A96E" strokeWidth="1.5"/>
+                {/* Body */}
+                <path d="M145 280 C145 230 165 205 200 200 C235 205 255 230 255 280" stroke="#C9A96E" strokeWidth="2" fill="#1C1812"/>
+                {/* Arms reaching down to bench */}
+                <path d="M155 230 Q130 255 140 290" stroke="#9B7A55" strokeWidth="2"/>
+                <path d="M245 230 Q265 255 250 290" stroke="#9B7A55" strokeWidth="2"/>
+                {/* Wood shavings */}
+                <path d="M160 360 Q175 350 185 358 Q195 366 180 370" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                <path d="M220 355 Q235 345 242 354 Q249 363 238 367" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                {/* Grain lines on plank */}
+                <path d="M110 305 Q155 301 200 306 Q245 311 290 305" stroke="#C9A96E" strokeWidth="0.8" opacity="0.4"/>
+              </svg>
+              <div className="absolute bottom-6 left-0 right-0 text-center">
+                <span className="text-qiru-gold/50 text-[10px] uppercase tracking-[0.2em] font-sans">Artesanía QIRU</span>
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -87,8 +117,33 @@ export default function Nosotros() {
         <FadeIn>
           <div className="bg-qiru-surface border border-qiru-border rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-2xl">
             <div className="w-full lg:w-1/2 aspect-square lg:aspect-auto min-h-[400px] bg-qiru-dark relative border-b lg:border-b-0 lg:border-r border-qiru-border flex items-center justify-center overflow-hidden group">
-               {/* Team member photo */}
-               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Mateo Espinosa" className="w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-700" />
+              <svg viewBox="0 0 300 380" className="w-[55%] max-w-[200px] opacity-55" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                {/* Portrait silhouette */}
+                <circle cx="150" cy="90" r="60" stroke="#C9A96E" strokeWidth="2" fill="#1C1812"/>
+                {/* Hair */}
+                <path d="M92 72 Q95 38 150 32 Q205 38 208 72" stroke="#9B7A55" strokeWidth="2" fill="#2A2420"/>
+                {/* Face */}
+                <circle cx="132" cy="88" r="6" fill="#C9A96E" opacity="0.5"/>
+                <circle cx="168" cy="88" r="6" fill="#C9A96E" opacity="0.5"/>
+                <path d="M132 112 Q150 124 168 112" stroke="#C9A96E" strokeWidth="1.5"/>
+                {/* Beard */}
+                <path d="M115 108 Q120 140 150 148 Q180 140 185 108" stroke="#9B7A55" strokeWidth="1.5" fill="#2A2420" opacity="0.7"/>
+                {/* Shoulders / body */}
+                <path d="M50 370 C50 290 90 260 150 255 C210 260 250 290 250 370" stroke="#C9A96E" strokeWidth="2" fill="#1C1812"/>
+                {/* Collar / shirt detail */}
+                <path d="M130 255 L150 285 L170 255" stroke="#9B7A55" strokeWidth="1.5"/>
+                {/* Arms */}
+                <path d="M55 300 Q42 330 48 370" stroke="#9B7A55" strokeWidth="2"/>
+                <path d="M245 300 Q258 330 252 370" stroke="#9B7A55" strokeWidth="2"/>
+                {/* Pocket */}
+                <rect x="160" y="305" width="35" height="28" rx="3" stroke="#9B7A55" strokeWidth="1" opacity="0.5"/>
+                {/* Name initial badge */}
+                <circle cx="150" cy="210" r="22" stroke="#C9A96E" strokeWidth="1.5" opacity="0.4"/>
+                <text x="150" y="217" textAnchor="middle" fill="#C9A96E" fontSize="20" fontFamily="serif" opacity="0.6">M</text>
+              </svg>
+              <div className="absolute bottom-6 left-0 right-0 text-center">
+                <span className="text-qiru-gold/40 text-[10px] uppercase tracking-[0.2em] font-sans">Fundador</span>
+              </div>
             </div>
             <div className="w-full lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
               <h3 className="font-serif text-[36px] text-qiru-white mb-2">Mateo Espinosa</h3>
