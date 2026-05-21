@@ -1,0 +1,6 @@
+{
+  "name": "QIRU Muebles",
+  "description": "Ecuadorian custom furniture brand that designs and crafts made-to-measure home furniture. A visual demo single-page application built with React and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
